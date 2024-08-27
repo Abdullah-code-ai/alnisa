@@ -1,0 +1,48 @@
+.bg-image-10{
+    background-image: url(../../Assets/5.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 120vh;
+    width: 100%;
+    /* display: flex;
+    align-items: center;
+    justify-content: center */
+
+}
+.course-contact-form {
+   
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    z-index: 999;
+    box-shadow: 0 0 10px #000;
+    background: rgba(0,0,0,0.5);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    
+  }
+  .main-1-heading-{
+    font-family: "Baskervville SC", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    line-height: 60px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    text-transform: lowercase;
+  }
+  .main-1-heading--{
+    font-family: "Baskervville SC", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    padding-left: 15px;
+    line-height: 60px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    text-transform: lowercase;
+  }
+  .course-imagess{
+    margin: 5px 0;
+  }

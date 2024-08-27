@@ -1,0 +1,22 @@
+.img-about{
+    width: 90%;
+    height: 70%;
+    border-radius: 40px;
+}
+.about-para{
+    font-size: 18px;
+    line-height: 25px;
+   
+    font-family: "DM Serif Text", serif;
+   
+    font-weight: 500;
+    color: #4d4f55;
+
+}
+.title-about{
+    font-family: "DM Serif Text", serif;
+    font-size: 50px;
+    font-weight: 600;
+    color: #c0962b;
+
+}

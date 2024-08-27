@@ -1,0 +1,114 @@
+.nav{
+    width:100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 999;
+    box-shadow: 0 0 10px #000;
+    background: rgba(0,0,0,0.5);
+}
+.nav-link{
+    color: #fff;
+    text-decoration: none;
+    padding: 20px;
+    transition: 0.5s;
+    cursor: pointer;
+    letter-spacing: 1px;
+    font-size: 18px;
+    font-weight: 500;
+
+}
+.nav-item{
+    margin-right: 30px;
+}
+
+
+
+.nav-link {
+    font-size: 14px;
+    color: #ffffff;
+    
+    font-weight:500;
+    cursor: pointer;
+    position: relative;
+    font-family: "DM Serif Text", serif;
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 500ms;
+    transition-property: color;
+  }
+  
+  .nav-link:focus,
+  .nav-link:hover {
+    color: #0D7C66;
+  }
+  
+  .nav-link:focus:after,
+  .nav-link:hover:after {
+    width: 100%;
+    left: 0%;
+  }
+  .nav-item:hover{
+    color: #0D7C66;
+  }  
+  .nav-link:after {
+    content: "";
+    pointer-events: none;
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    color: #0D7C66;
+    background-color: #0D7C66;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+  }
+
+.dropdown-menu{
+    background-color: rgb(13, 14, 14);
+}
+  
+
+
+  .dropdown-item {
+    font-size: 14px;
+    color: #ffffff;
+    margin: 20px 0px;
+    font-weight:500;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 500ms;
+    transition-property: color;
+  }
+  
+  
+  
+  .dropdown-item:focus:after,
+  .dropdown-item:hover:after {
+    width: 100%;
+    left: 0%;
+  }
+  
+  .dropdown-item:after {
+    content: "";
+    pointer-events: none;
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #000;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+  }

@@ -1,0 +1,97 @@
+.student-review-carousel-container {
+    position: relative;
+    max-width: 800px;
+   height: 300px;
+   overflow: hidden;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .student-reviews{
+    background-image: url(../../Assets/3.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+  }
+  .review-heading{
+    font-size: 44px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #cfc6c6;
+    font-family: "DM Serif Text", serif;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .carousel-item {
+    position: relative;
+    display: none;
+    width: 100%;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+    transition: transform 0.5s ease-in-out;
+  }
+  .review{
+    font-size: 14px;
+    line-height: 1.5;
+    margin-top: 10px;
+    margin-bottom: 20px;
+   
+    font-family: "DM Serif Text", serif;
+   
+   
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+   
+   
+  }
+  
+  .carousel-item.active {
+    display: block;
+    transform: translateX(0);
+  }
+  
+  .carousel-item.animating {
+    transform: translateX(-100%);
+  }
+  
+  .review-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .review-container img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+  
+  .review-container h3 {
+    margin-top: 0;
+    font-size: 18px;
+  }
+  
+  .review-container p {
+    font-size: 16px;
+  }

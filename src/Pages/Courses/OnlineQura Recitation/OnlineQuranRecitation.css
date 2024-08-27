@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap');
+
+
+
+
+.main-data{
+    padding: 20px;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 1px;
+    width: 80%;
+   
+    font-weight: 500;
+    color: #4d4f55;
+    /* text-align: center; */
+    margin-bottom: 30px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+
+}
+.main-data:hover{
+    transform: scale(1.02);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+}
+.main-data-hrading{
+    font-size: 40px;
+    text-align: start;
+    margin-bottom: 30px;
+    color: #4d4f55;
+    font-family: "Baskervville SC", serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+.main-data-hrading-{
+    font-size: 40px;
+    text-align: start;
+    margin-bottom: 30px;
+    color: #4d4f55;
+    font-family: "Baskervville SC", serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+.main-data-para-{
+    font-size: 18px;
+    text-align: start;
+    margin-bottom: 30px;
+    color: #4d4f55;
+    font-family: "PT Serif", serif;
+   letter-spacing: 2px;
+    /* font-family: "Playfair Display", serif; */
+    font-weight: 400;
+    font-style: normal;
+    /* font-family: "Playfair Display", serif; */
+
+
+}
+.main-data-para{
+    font-size: 18px;
+    text-align: start;
+    margin-bottom: 30px;
+    color: #4d4f55;
+    font-family: "PT Serif", serif;
+   
+    /* font-family: "Playfair Display", serif; */
+    font-weight: 400;
+    font-style: normal;
+}
+.bg-img-2{
+    background-image: url(../../../Assets/bg2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center
+  
+
+}
+.main-1-heading{
+    font-family: "Baskervville SC", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 70px;
+    line-height: 60px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    text-transform: lowercase;
+
+}

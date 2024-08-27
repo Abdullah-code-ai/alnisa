@@ -1,0 +1,60 @@
+/* FeatureCard.css */
+.feature-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .feature-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: calc(33% - 40px); /* Adjusts card width for three per row */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .feature-title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    padding: 10px;
+    color: #333;
+    font-family: "DM Serif Text", serif;
+  }
+  .heading-text{
+    font-family: "DM Serif Text", serif;
+    font-size: 3rem;
+    margin: 20px 0;
+    color: #c0962b;
+    font-weight: 700;
+  }
+  
+  .feature-description {
+    font-size: 1.3rem;
+    color: #666;
+    font-family: "DM Serif Text", serif;
+  }
+  .feature-image{
+    width: 100px;
+}  
+  
+  @media (max-width: 1200px) {
+    .feature-card {
+      width: calc(50% - 40px); /* Two per row on medium screens */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .feature-card {
+      width: calc(100% - 40px); /* One per row on small screens */
+    }
+  }
