@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import './Features.css'
+import AOS from 'aos'
 import img from '../../Assets/free-400x4001.png'
 import img1 from '../../Assets/certificate-400x400.png'
 import img2 from '../../Assets/anniversary-400x400.png'

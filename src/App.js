@@ -15,6 +15,7 @@ import QuranwithTajweed from './Pages/Courses/QuranwithTajweed/QuranwithTajweed'
 import Contact from './Pages/Contact/Contact';
 import Pricing from './Pages/Pricing/Pricing';
 import ContactFormMain from './Components/RegisterNow/ContactFormMain';
+import AllCourses from './Components/Courses/AllCourses';
 
 
 
@@ -38,6 +39,7 @@ function App() {
   <Route path='/Tafseer' element={<Tafseer />} />
   <Route path='/Quran-with-Tajweed' element={<QuranwithTajweed />} />
  <Route path='/Contact-Form' element={<ContactFormMain />} />
+ <Route path='/AllCourses' element={<AllCourses />} />
 
    </Routes>
    <Footer />

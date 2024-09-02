@@ -34,6 +34,7 @@
     color: #fff;
     text-align: start;
     font-family: "DM Serif Text", serif;
+    
   }
   .hero-title {
     padding-top: 10px;
@@ -180,7 +181,7 @@ margin-left: 20px;
     height: 100%;
     background-color: #0D7C66;
     transform: translateX(-100%);
-    transition: all .3s;
+    transition: all .4s;
     z-index: -1;
    }
    

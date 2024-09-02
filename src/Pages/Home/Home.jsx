@@ -7,7 +7,7 @@ import CardList from './Card/CardList'
 import WhyChouseUs from './WhyChouseUs'
 import Review from './Review'
 import PricingCards from './PricingCards'
-import { Link } from 'react-router-dom'
+// import { Link } from 'react-router-dom'
 import ContactForm from './ContactForm'
 // import Footer from '../../Components/Footer/Footer'
 const Home = () => {

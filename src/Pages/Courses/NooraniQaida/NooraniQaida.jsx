@@ -21,7 +21,8 @@ const NooraniQaida = () => {
             <div className="course-data">
 <h1 className='main-data-hrading'>Basic Qaida For Beginners</h1>
 
-    <p className='main-data-para'>We are pleased to share with you that we are starting Online Quran Classes For Kids. It is a privilege for a Muslim to recite and learn Quran. The blessings are on all those who study and teach at these Online Quran Classes For Beginners. The curriculum for Online Quran Classes for Kids is designed in a student centric way. This content serves great purpose for Kids Quran classes. The reason for Quran Teaching Online is to serve Muslims. This is the reason that we have started Qaida for Beginners as well. Our Online Quran Academy is a brilliant initiative that will be beneficial for Muslims all around the world. We are humbled to inform that Quran Teaching Online will motivate Muslims. The inspiration it will provide for Online Quran Classes for Kids is stunning. Muslims from every nook and corner of the world will gather to attend these classes. These Online Quran Classes for Kids will help the Muslims understand the recitation. This is a great way to earn blessings. The amazing response Quran Teaching Online is getting is splendid. This is a beautiful way to serve the society as well. our society needs good role models. The best role model is our Prophet Muhammad صلى الله عليه وآله وسلم
+    <p className='main-data-para'>Learning Noorani Qaida is a great way to start learning how to read the Quran with proper pronunciation and Tajweed rules. It's a foundational book that helps beginners understand the Arabic alphabet, basic pronunciation rules, and essential Tajweed principles. It's widely used in many Islamic educational institutions and is beneficial for both children and adults who are starting to learn Quranic recitation.
+    At our academy, we offer comprehensive Noorani Qaida courses designed to cater to learners of all levels, from beginners to advanced students. We 1 covers essential topics such as Arabic alphabet recognition, , pronunciation rules, Tajweed principles, and Quranic reading fluency. With experienced instructors, personalized attention, and interactive learning materials, we ensure that students develop a strong foundation in Noorani Qaida, enabling them to embark confidently on their journey towards Quranic mastery.
 
 </p>
 </div>
@@ -41,6 +42,95 @@ const NooraniQaida = () => {
 
     </div>
 
+
+<div className="container">
+    <div className="row">
+    <div className="col-6">
+
+<ul className='ul'>
+    <li className='li'>
+    <h2 className='h2-main' > Harakaat (Short Vowels):</h2>
+    <p className='p-main'>Learners are introduced to the three short vowels (fatha, kasra, and damma) and how they affect the pronunciation of letters.</p>
+
+
+    </li>
+    <li className='li'>
+    <h2 className='h2-main'>Tanween and Noon Sakinah Rules:</h2>
+    <p className='p-main'>This section teaches the rules related to the pronunciation of the noon sakinah (3) and tanween (-) with different letters.</p>
+
+    </li>
+    <li className='li'>
+    <h2 className='h2-main'> Madd Rules:</h2>
+    <p className='p-main'>Learners are introduced to the rules of prolongation (madd) in recitation, including madd tabee'i (natural prolongation) and madd munfasil (separated prolongation).</p>
+
+
+    </li>
+    <li className='li'>
+    <h2 className='h2-main'> Sukoon and Shaddah Rules:</h2>
+<p className='p-main'>This section covers the rules related to sukoon () and shaddah (),
+explaining how they affect the pronunciation of letters.</p>
+
+
+
+    </li>
+   
+    </ul>
+
+    </div>
+    <div className="col-6">
+
+       <ul>
+       <li  className='li'>
+
+       <h2 className='h2-main'>Tajweed Rules</h2>
+       <p className='p-main'>Basic Tajweed rules are introduced, such as idghaam (merging), ikhfaa (concealing), and rules related to the pronunciation of specific letters.</p>
+       </li>
+    <li className='li'>
+    <h2 className='h2-main'>Practice Exercises:</h2>
+    <p className='p-main'>Throughout the book, there are exercises and practice sections to reinforce learning and help learners apply the rules they have learned.</p>
+
+
+    </li>
+    <li className='li'>
+    <h2 className='h2-main'> Reading Exercises:</h2>
+    <p className='p-main'>Towards the end of the book, there are reading exercises where learners can practice reading Quranic verses using the rules they have learned.</p>
+
+
+    </li>
+    <li className='li'>
+    <h2 className='h2-main'>Revision and Mastery:</h2>
+    <p className='p-main'>The final sections of the Noorani Qaida often include revision exercises and tips for continued practice to ensure mastery of the material.</p>
+
+
+    </li>
+
+
+
+       </ul>
+    </div>
+    </div>
+</div>
+
+
+{/* <div className="container text-start">
+    <div className="col-12">
+
+
+
+
+
+
+
+
+
+
+
+
+<p>Overall, the Noorani Qaida provides a systematic approach to learning Quranic recitation, starting from the basics of the Arabic alphabet and gradually progressing to more advanced Tajweed rules.</p>
+
+
+    </div>
+</div> */}
 
     <CourseFeatures />
     <div className="container">

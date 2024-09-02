@@ -1,6 +1,11 @@
 import React, { useState, useEffect }  from 'react'
 import './Review.css'
-import img2 from '../../Components/Navbar/logo512.png'
+import img1 from '../../Assets/profile2.jpg'
+import  img2 from '../../Assets/profile3.jpg'
+import img3 from '../../Assets/profile4.jpg'
+import img4 from '../../Assets/profile5.jpg'
+
+import AOS from 'aos'
 const Review = () => {
     const [reviews, setReviews] = useState([
         {
@@ -8,7 +13,7 @@ const Review = () => {
           name: 'John Doe',
           review: 'My son is doing well with Online Quran learning and I think this is an effective platform for online Quran learning in the USA. Teachers provide a comfortable and friendly environment for learning as well as provide effective learning due to professional expertise. My son enjoys learning online. He is thankful to Quran academy & takes online classes every day.',
           rating: 5,
-          image:   `${img2}` ,
+          image:   `${img1}` ,
         },
         {
           id: 2,
@@ -22,22 +27,22 @@ const Review = () => {
           name: 'Bob Smith',
           review: 'My niece has had an excellent experience learning the Quran online. Her teacher is very kind and uses all the best possible ways to engage her in Quran learning. In short, it is an effective platform that makes the students able to get religious education easily.',
           rating: 5,
-          image: `${img2}`,
+          image: `${img3}`,
         },
         {
           id: 4,
           name: 'Alice Johnson',
           review: 'Learning the Holy Quran with Tajweed &Tafseer is always my dream. I am thankful to Online Quran learning for improving my Quran learning by Online Quran classes. ',
           rating: 5,
-          image: `${img2}`,
+          image: `${img4}`,
         },
-        {
-          id: 5,
-          name: 'Mike Brown',
-          review: 'This course exceeded my expectations.',
-          rating: 4,
-          image: `${img2}`,
-        },
+        // {
+        //   id: 5,
+        //   name: 'Mike Brown',
+        //   review: 'This course exceeded my expectations.',
+        //   rating: 4,
+        //   image: `${img2}`,
+        // },
       ]);
     
       const [currentIndex, setCurrentIndex] = useState(0);
@@ -61,6 +66,15 @@ const Review = () => {
       const handleNextClick = () => {
         setAnimating(true);
         setTimeout(() => {
+          setCurrentIndex((currentIndex + 1) % reviews.length);
+          setAnimating(false);
+        }, 500);
+      };
+    
+
+      const handleNextClick1 = () => {
+        setAnimating(true);
+        setReviews(() => {
           setCurrentIndex((currentIndex + 1) % reviews.length);
           setAnimating(false);
         }, 500);
@@ -89,8 +103,8 @@ useEffect(() => {
               animating ? 'animating' : ''
             }`}
           >
-            <div className="review-container">
-              <img src={review.image} alt={review.name} />
+            <div className="review-container" onClick={handleNextClick}>
+              <img src={review.image} alt={review.name} onClick={handlePrevClick}  />
               <h3>{review.name}</h3>
               <p className='review'>{review.review}</p>
               <div className="rating">
@@ -99,7 +113,7 @@ useEffect(() => {
               
                 ))}
                 {[...Array(5 - review.rating)].map((_, i) => (
-                     <i key={i} className="fas fa-star" />
+                     <i key={i} className="fas fa-star"  onClick={handleNextClick1} />
                 //   
                 //  
                 ))}

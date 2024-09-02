@@ -10,11 +10,11 @@ import img5 from '../../Assets/WhatsApp Image 2024-08-19 at 21.22.03_191e54a7.jp
 import img6 from '../../Assets/WhatsApp Image 2024-08-19 at 21.22.04_9ad3d636.jpg'
 import { Link } from 'react-router-dom';
 import { useEffect } from 'react';
-
+import AOS from 'aos';
 // Example images
-const images = [
+// const images = [
  
-];
+// ];
 
 const CourseCard = () => {
    useEffect(() => {
@@ -35,7 +35,7 @@ const CourseCard = () => {
         <div className="col-4">
 
         <div className="card">
-        <img src={img1} alt="Card Image" className="card-image" />
+        <img src={img1} alt="CardImage" className="card-image" />
         <div className="card-content">
             <Link className='text-decoration-none' to='/Noorani-Qaida'>
           <h3 className="card-title">Basic Noorani Qaida</h3></Link>
@@ -51,7 +51,7 @@ const CourseCard = () => {
         <div className="col-4">
 
         <div className="card">
-        <img src={img2} alt="Card Image" className="card-image" />
+        <img src={img2} alt="CardImage" className="card-image" />
         <div className="card-content">
         <Link className='text-decoration-none' to='/Quran-recitation-online'>
           <h3 className="card-title">Online Quran Reading</h3></Link>
@@ -64,7 +64,7 @@ const CourseCard = () => {
         <div className="col-4">
 
         <div className="card">
-        <img src={img3} alt="Card Image" className="card-image" />
+        <img src={img3} alt="CardImage" className="card-image" />
         <div className="card-content">
         <Link className='text-decoration-none' to='/Quran-with-Tajweed'>
           <h3 className="card-title">Quran with Tajweed</h3></Link>
@@ -77,7 +77,7 @@ const CourseCard = () => {
         <div className="col-4">
 
         <div className="card">
-        <img src={img4} alt="Card Image" className="card-image" />
+        <img src={img4} alt="CardImage" className="card-image" />
         <div className="card-content">
         <Link className='text-decoration-none' to='/Online-Quran-Memorization'>
           <h3 className="card-title">Memorization of Holy Quran</h3></Link>
@@ -91,7 +91,7 @@ const CourseCard = () => {
         <div className="col-4">
 
         <div className="card">
-        <img src={img5} alt="Card Image" className="card-image" />
+        <img src={img5} alt="CardImage" className="card-image" />
         <div className="card-content">
         <Link className='text-decoration-none' to='/Tafseer'>
           <h3 className="card-title">Tafseer Quran Iearning</h3></Link>
@@ -104,7 +104,7 @@ const CourseCard = () => {
         <div className="col-4">
 
         <div className="card">
-        <img src={img6} alt="Card Image" className="card-image" />
+        <img src={img6} alt="CardImage" className="card-image" />
         <div className="card-content">
         <Link className='text-decoration-none' to='/Quran-for-Kids'>
           <h3 className="card-title"> Quran for Kids</h3> </Link>

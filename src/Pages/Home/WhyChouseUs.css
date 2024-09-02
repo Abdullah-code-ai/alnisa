@@ -13,7 +13,14 @@ width: 100%;
     color: white;
 
 }
-.heading-whyChousUs{
+/* .card-image--{
+ text-align: center;
+ display: flex;
+ justify-content: center;
+ margin-top: ;
+ margin-left: 90px;
+} */
+.heading-whyChouseUs{
     font-size: 50px;
     font-weight: bold;
     text-align: center;

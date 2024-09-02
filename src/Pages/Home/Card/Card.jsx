@@ -1,27 +1,18 @@
 import React from 'react';
-import './Card.css';
 import { Link } from 'react-router-dom';
-const Card = ({ title, description, image, button   }) => {
+import './Card.css';
+
+const Card = ({ image, title, description, link }) => {
   return (
-<>
-
-
-
-    <div className="card- "   >
-      <img src={image} alt={title} />
-      <div className="card-body-">
-        <h2 className="card-title-">{title}</h2>
-        <p className="card-text-">{description}</p>
-        <Link to="/Courses">
-          <button className="btn btn-primary">{button}</button>  {/* Button to navigate to Courses page */}
-        
-        </Link>
+    <div className="card">
+      <img src={image} alt={title} className="card-image" />
+      <div className="card-content">
+        <h3 className="card-title">{title}</h3>
+        <p className="card-description">{description}</p>
+        <button className='btn btn-primary'>
+        <Link to={link} className="card-link">Learn More</Link></button>
       </div>
     </div>
-   
-
-
-    </>
   );
 };
 

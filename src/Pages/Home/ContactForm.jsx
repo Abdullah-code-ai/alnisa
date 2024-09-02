@@ -38,7 +38,12 @@ const ContactForm = () => {
     };
 
     return (
-        <div className="contact-form-container mt-5">
+        <>
+       
+        <div className="container">
+<div className="row">
+    <div className="col-6">
+    <div className="contact-form-container mt-5">
             <form onSubmit={handleSubmit} className="contact-form">
                 <label htmlFor="name">Name:</label>
                 <input
@@ -78,6 +83,24 @@ const ContactForm = () => {
                 <button type="submit">Send Message</button>
             </form>
         </div>
+
+
+
+
+    </div>
+    <div className="col-6">
+
+
+
+
+
+
+        
+    </div>
+</div>
+        </div>
+        
+        </>
     );
 };
 

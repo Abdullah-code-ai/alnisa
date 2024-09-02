@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import './daysTrail.css'
+import emailjs from '@emailjs/browser';
 const FreeTrail = () => {
   const [formData, setFormData] = useState({
     name: '',

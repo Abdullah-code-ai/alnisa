@@ -2,6 +2,7 @@ import React from 'react'
 import './PricingCards.css'
 import { Link } from 'react-router-dom';
 import { useEffect } from 'react';
+import AOS from 'aos';
 
 const PricingCards = () => {
   const plans = [
@@ -34,7 +35,7 @@ useEffect(() => {
 
   return (
     <>
-     <div className="container text-center mt-5" >
+     <div className="container text-center " >
       <h1 className='title-'>Monthly Fee</h1>
     </div>
    <div className="container-fluid">

@@ -9,7 +9,7 @@ const Navbar = () => {
    <nav className="navbar navbar-dark navbar-expand-lg text-light   nav">
     {/*  bg-light */}
         <div className="container-fluid">
-          <a className="navbar-brand ms-5" to='/'>
+          <a className="navbar-brand ms-5" href="#a">
           <img src={logo} alt="" width={200} />
           
           </a>
@@ -28,9 +28,9 @@ const Navbar = () => {
                 <Link className="nav-link" to='/Pricing'>Pricing</Link>
               </li>
               <li className="nav-item dropdown">
-                <a className="nav-link dropdown-toggle" to='/' id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <Link className="nav-link dropdown-toggle" to='/' id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Courses
-                </a>
+                </Link>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li><Link className="dropdown-item" to='/Noorani-Qaida'>Noorani Qaida</Link></li>
                   <li><Link className="dropdown-item" to='/Quran-recitation-online'>Online Quran Recitation Course</Link></li>
