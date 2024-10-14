@@ -31,14 +31,14 @@ const Footer = () => {
             <li><Link to="/Quran-with-Tajweed" className='Link'>Quran with Tajweed</Link></li>
             <li>  <Link to="/Online-Quran-Memorization" className='Link'>Memorization of Holy Quran</Link></li>
             <li>  <Link to="/Tafseer" className='Link'>Tafseer Quran Iearning</Link></li>
-            <li>  <Link to="/Quran-for-Kids" className='Link'>Learn Quran for Kids</Link></li>
+            <li>  <Link to="/Quran-Translation" className='Link'>Online Quran Translation</Link></li>
           </ul>
         </div>
         <div className="footer-col">
           <h4 className='footer-heading'>Contact  us</h4>
           <ul className="list-unstyled">
               <li  className="Link-"> <a href="abdullahtabassam79@gmail.com" className="Link-">alnisaquraninstitute@gmail.com</a></li>
-              <li className="Link-"> <a href="tel:+923100551936" className="Link-">+923100551936</a></li>
+              <li className="Link-"> <a href="tel:+923100551936" className="Link-">+923355871531</a></li>
             </ul>
 
           <div className="links">

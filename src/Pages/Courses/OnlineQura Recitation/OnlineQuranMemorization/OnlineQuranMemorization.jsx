@@ -16,7 +16,31 @@ const OnlineQuranMemorization = () => {
     
     <div className="container main-data mt-5 ">
     <h1 className="main-data-hrading">Online Quran Memorization Classes</h1>
-        <p className="main-data-para">
+    <p  className="main-data-para">Qur'an memorization is a deeply
+revered practice within the Islamic
+tradition, emphasizing both spiritual 
+and intellectual development. At our
+academy, we provide a structured
+environment where students can
+embark on this sacred journey with
+dedication and guidance. Through a
+carefully designed curriculum,
+students are encouraged to
+memorize the Qur'an at their own
+pace while gaining a deep
+understanding of its meanings and
+teachings. Our experienced
+instructors offer personalised
+support, ensuring that each student
+not only retains the verses but also
+appreciates their significance. By
+fostering a disciplined approach to
+memorization, we aim to nurture a
+generation of individuals who are
+not only well-versed in the Qur'an
+but also embody its principles in
+their daily lives.</p>
+        {/* <p className="main-data-para">
         We let you embark on a transformative journey with our Online Quran Memorization Classes. Our platform is not just a learning experience; it’s a spiritual odyssey that connects you with the divine words through innovative and personalized teaching methods. <br /> </p>
 <p className="main-data-para">
 In a world where time is a precious commodity, our Online Quran Memorization Classes break down barriers to make you great at learning of the holy Quran. Imagine memorizing the verses of the Quran seamlessly, fitting effortlessly into your busy schedule with our online Hifz tutors. Whether you are a professional, a student, or a homemaker, our flexible classes allow you to embark on the noble path of Quran memorization at a pace that suits you.
@@ -29,7 +53,7 @@ Our dedicated instructors, well-versed in traditional teachings, use modern tech
 
 The online format of our Online Hifz Course classes doesn’t compromise on quality; it enhances it. Join a community of like-minded individuals who share your passion for the Quran. Quran Memorization Classes Online take place in our virtual classrooms, friendships are forged, and a sense of camaraderie blossoms as you support and uplift each other on this sacred mission. <br /></p>
 <p className="main-data-para">
-We’ve crafted Online Quran Memorization Course to make you experience that seamlessly blends the traditional with the modern, creating an atmosphere where the spirit of the Quran thrives. We provide services in USA and Pakistan. We also have Pakistani and USA Teachers. So memorize Quran online to engage with advanced learning, repetition strategies, and multimedia aids. These turn the memorization journey into a rewarding adventure. Quran Memorization Course Online lets you embrace your learning experience and witness the joy that comes with mastering each verse.</p>
+We’ve crafted Online Quran Memorization Course to make you experience that seamlessly blends the traditional with the modern, creating an atmosphere where the spirit of the Quran thrives. We provide services in USA and Pakistan. We also have Pakistani and USA Teachers. So memorize Quran online to engage with advanced learning, repetition strategies, and multimedia aids. These turn the memorization journey into a rewarding adventure. Quran Memorization Course Online lets you embrace your learning experience and witness the joy that comes with mastering each verse.</p> */}
 <p className="main-data-para">
 
 Choose more than just a class; choose a transformative experience. Join our Online Quran Memorization Classes and let the divine words become an integral part of your being. Enrich your soul, expand your knowledge, and embrace the beauty of Quranic memorization with us. Your spiritual journey begins here.
@@ -39,10 +63,9 @@ Choose more than just a class; choose a transformative experience. Join our Onli
 
     </div>
     
-<CourseFeatures />
     <div className="container">
         <div className="row">
-          <div className="col-6">
+          <div className="col-sm-12 col-lg-6">
             <div className="card-noorani">
               <div className="card-content">
                 <h1 className="card-title main-data-hrading ">
@@ -52,13 +75,13 @@ Choose more than just a class; choose a transformative experience. Join our Onli
                 <p className="main-data-para-">
                 Each Muslim dreams of Memorizing the Quran and understanding its meanings. Quran is the guidance sent by Allah Almighty to his Prophet Muhammad (PBUH). Allah Almighty said in the Holy Quran, “We have, without doubt, sent down the Message; and we will assuredly guard it (from corruption).” (15:9). Each Muslim should memorize the Quran and encourage his/her children to do.
                 </p>
-                <p className="main-data-para-">Allah sent the Quran down to Muslims in Arabic. So who master teaching the Quran better than native Arab sheiks?! Ejazul Quran native tutors guarantee perfect Quran memorization, correct Quran pronouncing, and good Quran understanding.
+                <p className="main-data-para-">Allah sent the Quran down to Muslims in Arabic. So who master teaching the Quran better than native Arab sheiks?! AL-NISA Quran native tutors guarantee perfect Quran memorization, correct Quran pronouncing, and good Quran understanding.
 
 </p>
               </div>
             </div>
           </div>
-          <div className="col-6">
+          <div className="col-sm-12 col-lg-6">
             <div className="card-noorani">
               <h1 className="card-title main-data-hrading">
               In the Quran Memorization Course, you’ll learn:
@@ -85,6 +108,7 @@ Choose more than just a class; choose a transformative experience. Join our Onli
       </div>
 
 
+      <CourseFeatures />
 
 
 

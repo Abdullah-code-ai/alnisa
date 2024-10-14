@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import emailjs from "emailjs-com";
 import "./ContactForm.css";
+import iimg from "../../Assets/2.png";
 
 const ContactForm = () => {
     const [formData, setFormData] = useState({
@@ -18,8 +19,26 @@ const ContactForm = () => {
         });
     };
 
+   
+    const handleSubmitButton = (e) => {
+        if (formData.name === "" && formData.email === "" && formData.phone === "" && formData.message === "" && formData.name === ""  ) {
+            alert("Please fill out all fields.");
+                //  <div className="alert alert-danger">Please fill LL out all fields.</div>
+           } else if (formData.email === "" ||!formData.email.includes("@")) {
+            <div className="alert alert-danger">Please enter a valid email.</div>
+        
+            
+           }
+
+    }
+
+
     const handleSubmit = (e) => {
         e.preventDefault();
+
+        
+
+
 
         emailjs.sendForm('service_0fkveg7', 'template_d1azc87', e.target, 'tzMLxrPQ2CwSxxYpp')
             .then((result) => {
@@ -35,6 +54,10 @@ const ContactForm = () => {
                 console.log(error.text);
                 alert("Message failed to send.");
             });
+
+
+
+
     };
 
     return (
@@ -42,15 +65,16 @@ const ContactForm = () => {
        
         <div className="container">
 <div className="row">
-    <div className="col-6">
-    <div className="contact-form-container mt-5">
-            <form onSubmit={handleSubmit} className="contact-form">
+    <div className="col-sm-12  col-md-6">
+    <div className="contact-form-container contact-form- mt-5">
+            <form onSubmit={handleSubmit} className=" contact-form contact-form-">
                 <label htmlFor="name">Name:</label>
                 <input
                     type="text"
                     id="name"
                     name="name"
                     value={formData.name}
+                    placeholder="Enter your name:"
                     onChange={handleChange}
                     required
                 />
@@ -60,6 +84,7 @@ const ContactForm = () => {
                     id="email"
                     name="email"
                     value={formData.email}
+                    placeholder="Enter your email:"
                     onChange={handleChange}
                     required
                 />
@@ -69,6 +94,7 @@ const ContactForm = () => {
                     id="phone"
                     name="phone"
                     value={formData.phone}
+                    placeholder="Enter your phone number:"
                     onChange={handleChange}
                     required
                 />
@@ -77,10 +103,11 @@ const ContactForm = () => {
                     id="message"
                     name="message"
                     value={formData.message}
+                    placeholder="Enter your message:"
                     onChange={handleChange}
                     required
                 ></textarea>
-                <button type="submit">Send Message</button>
+                <button type="submit" onClick={handleSubmitButton} className="btn btn-primary ">Send Message</button>
             </form>
         </div>
 
@@ -88,9 +115,9 @@ const ContactForm = () => {
 
 
     </div>
-    <div className="col-6">
+    <div className="col-sm-12  col-md-6 mt-5 ">
 
-
+<img src={iimg} alt="" className="contact-img" />
 
 
 

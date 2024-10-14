@@ -2,12 +2,12 @@
 import React from 'react';
 import './CourseCard.css';
 
-import img1 from '../../Assets/WhatsApp Image 2024-08-19 at 21.22.01_3c3228aa.jpg'
-import img2 from '../../Assets/WhatsApp Image 2024-08-19 at 21.22.01_9ff60502.jpg'
-import img3 from '../../Assets/WhatsApp Image 2024-08-19 at 21.22.02_4efd33a5.jpg'
-import img4 from '../../Assets/WhatsApp Image 2024-08-19 at 21.22.03_93df8d61.jpg'
-import img5 from '../../Assets/WhatsApp Image 2024-08-19 at 21.22.03_191e54a7.jpg'
-import img6 from '../../Assets/WhatsApp Image 2024-08-19 at 21.22.04_9ad3d636.jpg'
+import img1 from '../../Assets/WhatsApp Image 2024-09-24 at 09.12.47_098db80c.jpg'
+import img2 from '../../Assets/WhatsApp Image 2024-09-24 at 09.12.57_f6113d2d.jpg'
+import img3 from '../../Assets/WhatsApp Image 2024-09-02 at 15.39.49_baf337a4.jpg'
+import img4 from '../../Assets/WhatsApp Image 2024-09-24 at 09.20.01_1e2a72a7.jpg'
+import img5 from '../../Assets/WhatsApp Image 2024-09-24 at 09.18.19_0694184e.jpg'
+import img6 from '../../Assets/WhatsApp Image 2024-09-23 at 14.27.21_0ce2a35f.jpg'
 import { Link } from 'react-router-dom';
 import { useEffect } from 'react';
 import AOS from 'aos';
@@ -17,6 +17,44 @@ import AOS from 'aos';
 // ];
 
 const CourseCard = () => {
+  const courses = [
+    {
+      id: 1,
+      title: 'Basic Noorani Qaida',
+      image: `${img1}`,
+      link: '/Noorani-Qaida',
+    },
+    {
+      id: 2,
+      title: 'Online Quran Reciation',
+      image: `${img2}`,
+      link: '/Quran-recitation-online',
+    },
+    {
+      id: 3,
+      title: 'Quran Tajweed Course',
+      image: `${img3}`,
+      link: '/v',
+    },
+    {
+      id: 4,
+      title: 'Memorization of Holy Quran',
+      image: `${img4}`,
+      link: '/Online-Quran-Memorization',
+    },
+    {
+      id: 5,
+      title: 'Quran Tafseer Course',
+      image: `${img5}`,
+      link: '/Tafseer',
+    },
+    {
+      id: 6,
+      title: 'Quran Translation',
+      image: `${img6}`,
+      link: '/Quran-Translation',
+    },
+  ];
    useEffect(() => {
     AOS.init({
       duration: 3000,}
@@ -26,15 +64,23 @@ const CourseCard = () => {
 
   return (
     <>
-<div className="container text-center">
-  <h1 className='text-center heading-text m-5'>Our Courses</h1>
-</div>
+     <h2 className="text-center mb-5 container-title mt-5">Our Popular Courses</h2>
+   <div className="course-cards-grid">
+      {courses.map((course) => (
+        <div className="course-card" key={course.id}>
+          <img src={course.image} alt={course.title} className="course-image" />
+          <h3 className="course-title">{course.title}</h3>
+          <Link to={course.link} className="course-link">Learn More</Link>
+        </div>
+      ))}
+    </div>
 
-<div className="container "   data-aos="zoom-in">
-    <div className="row">
-        <div className="col-4">
+{/* <div className="container "  >
+  <h2 className="text-center mb-5 container-title mt-5">Our Popular Courses</h2>
+    <div className="row ">
+        <div className="  col-sm-12 col-md-12 col-lg-4 "  data-aos="zoom-in">
 
-        <div className="card">
+        <div className="card col-sm-12 ">
         <img src={img1} alt="CardImage" className="card-image" />
         <div className="card-content">
             <Link className='text-decoration-none' to='/Noorani-Qaida'>
@@ -48,33 +94,33 @@ const CourseCard = () => {
 
 
         </div>
-        <div className="col-4">
+        <div className="col-sm-12 col-lg-4"  data-aos="zoom-in">
 
-        <div className="card">
+        <div className="card   ">
         <img src={img2} alt="CardImage" className="card-image" />
         <div className="card-content">
         <Link className='text-decoration-none' to='/Quran-recitation-online'>
-          <h3 className="card-title">Online Quran Reading</h3></Link>
+          <h3 className="card-title">Online Quran Reciation</h3></Link>
           
           
         </div>
       </div>
 
         </div>
-        <div className="col-4">
+        <div className="col-sm-12 col-lg-4"  data-aos="zoom-in">
 
         <div className="card">
         <img src={img3} alt="CardImage" className="card-image" />
         <div className="card-content">
         <Link className='text-decoration-none' to='/Quran-with-Tajweed'>
-          <h3 className="card-title">Quran with Tajweed</h3></Link>
+          <h3 className="card-title">Quran Tajweed Course</h3></Link>
           
           
         </div>
       </div>
 
         </div>
-        <div className="col-4">
+        <div className="col-sm-12 col-lg-4"  data-aos="zoom-in">
 
         <div className="card">
         <img src={img4} alt="CardImage" className="card-image" />
@@ -88,26 +134,26 @@ const CourseCard = () => {
 
 
         </div>
-        <div className="col-4">
+        <div className="col-sm-12 col-lg-4"  data-aos="zoom-in">
 
         <div className="card">
         <img src={img5} alt="CardImage" className="card-image" />
         <div className="card-content">
         <Link className='text-decoration-none' to='/Tafseer'>
-          <h3 className="card-title">Tafseer Quran Iearning</h3></Link>
+          <h3 className="card-title">Quran Tafseer Course</h3></Link>
         
           
         </div>
       </div>
 
         </div>
-        <div className="col-4">
+        <div className="col-sm-12 col-lg-4"  data-aos="zoom-in">
 
         <div className="card">
         <img src={img6} alt="CardImage" className="card-image" />
         <div className="card-content">
-        <Link className='text-decoration-none' to='/Quran-for-Kids'>
-          <h3 className="card-title"> Quran for Kids</h3> </Link>
+        <Link className='text-decoration-none' to='/Quran-Translation'>
+          <h3 className="card-title">Quran Translation</h3> </Link>
          
           
         </div>
@@ -116,7 +162,7 @@ const CourseCard = () => {
 
         </div>
     </div>
-</div>
+</div> */}
 
 
     </>

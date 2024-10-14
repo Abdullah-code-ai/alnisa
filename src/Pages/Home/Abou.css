@@ -15,6 +15,17 @@
     font-style: normal;
 
 }
+.btn-primay{
+    background-color:#0D7C66 !important;
+   
+    color: #fff !important;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
 .about-para{
     font-family: "Poppins", sans-serif;
     font-weight: 200;

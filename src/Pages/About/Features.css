@@ -53,7 +53,7 @@
     }
   }
   
-  @media (max-width: 768px) {
+  @media (max-width: 700px) {
     .feature-card {
       width: calc(100% - 40px); /* One per row on small screens */
     }

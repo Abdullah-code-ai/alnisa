@@ -2,7 +2,8 @@ import React from 'react'
 import CourseCard from '../../About/CourseCard'
 import PricingCards from '../../Home/PricingCards'
 import './NooraniQaida.css'
-import img1 from '../../../Assets/WhatsApp Image 2024-08-19 at 21.22.03_191e54a7.jpg'
+// import img1 from '../../../Assets/WhatsApp Image 2024-08-19 at 21.22.03_191e54a7.jpg'
+import img from '../../../Assets/8.png'
 import FreeTrail from '../../../Components/3DaysTrail/FreeTrail'
 import CourseFeatures from '../../../Components/CourseFeatures/CourseFeatures'
 // import CourseFeatures from '../../../Components/CourseFeatures/CourseFeatures'<CourseFeatures />
@@ -10,11 +11,32 @@ const NooraniQaida = () => {
   return (
     <>
     <div className="container-fluid bg-img-1 text-center">
-        <h1 className='main-1-heading'> Basic Qaida For Beginners</h1>
+        <h1 className='main-1-heading'> Basic Qaida For <br /> Beginners</h1>
 
     </div>
+    <div className="container mt-5">
+        <div className="row">
+            <div className="col-sm-12 col-lg-6">
+            <div className="course-data">
+<h1 className='main-data-hrading'>Basic Qaida For Beginners</h1>
+
+    <p className='main-data-para'>Learning Noorani Qaida is a great way to start learning how to read the Quran with proper pronunciation and Tajweed rules. It's a foundational book that helps beginners understand the Arabic alphabet, basic pronunciation rules, and essential Tajweed principles. It's widely used in many Islamic educational institutions and is beneficial for both children and adults who are starting to learn Quranic recitation.
+    At our academy, we offer comprehensive Noorani Qaida courses designed to cater to learners of all levels, from beginners to advanced students. We 1 covers essential topics such as Arabic alphabet recognition, , pronunciation rules, Tajweed principles, and Quranic reading fluency. With experienced instructors, personalized attention, and interactive learning materials, we ensure that students develop a strong foundation in Noorani Qaida, enabling them to embark confidently on their journey towards Quranic mastery.
+
+</p>
+<p className='main-data-para'>The Noorani Qaida typically follows a structured outline to teach beginners how to read the Quran. Here's a basic outline</p>
+</div>
+
+
+            </div>
+            <div className="col-sm-12 col-lg-6">
+           <img src={img} alt="" className='img1' />
+
+            </div>
+        </div>
+    </div>
     
-    <div className="container main-data mt-5">
+    {/* <div className="container main-data mt-5">
         <div className="row">
            
             <div className="col-6">
@@ -40,16 +62,15 @@ const NooraniQaida = () => {
 
 
 
-    </div>
+    </div> */}
 
-
-<div className="container">
-    <div className="row">
-    <div className="col-6">
+<div className="container-fluid mt-5">
+    <div className="row mt-5">
+    <div className="col-sm-12 col-lg-6">
 
 <ul className='ul'>
     <li className='li'>
-    <h2 className='h2-main' > Harakaat (Short Vowels):</h2>
+    <h2 className='h2-main mt-3' > Harakaat (Short Vowels):</h2>
     <p className='p-main'>Learners are introduced to the three short vowels (fatha, kasra, and damma) and how they affect the pronunciation of letters.</p>
 
 
@@ -77,7 +98,7 @@ explaining how they affect the pronunciation of letters.</p>
     </ul>
 
     </div>
-    <div className="col-6">
+    <div className="col-sm-12 col-lg-6">
 
        <ul>
        <li  className='li'>
@@ -132,10 +153,10 @@ explaining how they affect the pronunciation of letters.</p>
     </div>
 </div> */}
 
-    <CourseFeatures />
+   
     <div className="container">
         <div className="row">
-            <div className="col-6">
+            <div className="col-sm-12 col-lg-6">
 
 
 
@@ -160,7 +181,7 @@ Your instructor will also instruct you on the phonetic Quran during the Reading 
 
 
             </div>
-            <div className="col-6">
+            <div className="col-sm-12 col-lg-6">
 
             <div className="card-noorani">
         
@@ -179,30 +200,13 @@ Your instructor will also instruct you on the phonetic Quran during the Reading 
                 <li className='lists'>AlifulWasl rules</li>
                 <li className='lists'>Characteristics of the Quranic writing</li>
             </ul>
-        
-
-
-
-
-
-
-
-
-
-
       </div>
-
-
-
-
-
-
-
             </div>
         </div>
     </div>
+<CourseFeatures />
     
-    <div className="container text-center">
+    <div className="container text-center mt-5">
         <h1 className="main-data-hrading text-center">AL-NISA Quran Institute Online Courses</h1>
     </div>
     

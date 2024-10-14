@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import './Navbar.css'
 import logo from '../../Assets/logo.png'
+// import Button from './Button'
 const Navbar = () => {
   return (
    <>
@@ -9,7 +10,7 @@ const Navbar = () => {
    <nav className="navbar navbar-dark navbar-expand-lg text-light   nav">
     {/*  bg-light */}
         <div className="container-fluid">
-          <a className="navbar-brand ms-5" href="#a">
+          <a className="navbar-brand " href="#a">
           <img src={logo} alt="" width={200} />
           
           </a>
@@ -39,14 +40,14 @@ const Navbar = () => {
 
                   <li><Link className="dropdown-item" to='/Tafseer'> Online Quran Tafseer</Link></li>
                   <li><Link className="dropdown-item" to='/Quran-with-Tajweed'> Quran with Tajweed</Link></li>
-                  <li><Link className="dropdown-item" to='/Quran-for-Kids'>Learn Quran for Kids</Link></li>
+                  <li><Link className="dropdown-item" to='/Quran-Translation'>Online Quran Translation</Link></li>
 
                   
                 </ul>
               </li>
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <Link className="nav-link" to='/Blogs'>Blogs</Link>
-              </li>
+              </li> */}
               <li className="nav-item">
                 <Link className="nav-link" to='/Contact'>Contact Us</Link>
               </li>
@@ -58,7 +59,7 @@ const Navbar = () => {
       </nav>
 
    
-   
+   {/* <Button /> */}
    
    
    

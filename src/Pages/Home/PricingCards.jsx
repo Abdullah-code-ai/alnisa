@@ -18,7 +18,7 @@ const PricingCards = () => {
     },
     {
       title: 'Premium Plan',
-      price: '$45/month',
+      price: '$50/month',
       features: ['Free Registration', '30 Minutes Class', 'One to One Classes', '24/7 Classes', ' 5 Classes in one week'],
     },
    
@@ -39,9 +39,9 @@ useEffect(() => {
       <h1 className='title-'>Monthly Fee</h1>
     </div>
    <div className="container-fluid">
-    <div className="pricing-container" data-aos="zoom-in">
+    <div className="pricing-container" >
       {plans.map((plan, index) => (
-        <div className="pricing-card" key={index}>
+        <div className="pricing-card" data-aos="zoom-in" key={index}>
           <h2 className="card-title">{plan.title}</h2>
           <p className="card-price">{plan.price}</p>
           <ul className="card-features">
@@ -50,7 +50,7 @@ useEffect(() => {
               
             ))}
           </ul>
-        <Link to="/Contact-Form" className="card-button-">
+        <Link to="/Registration" className="card-button-">
           <button className="card-button">Free Registration</button></Link>
         </div>
       ))}

@@ -5,7 +5,7 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     
-    height: 90vh;
+    height: 100vh;
 width: 100%;
     display: flex;
     justify-content: center;
@@ -17,4 +17,29 @@ width: 100%;
 .para{
     font-family: "DM Serif Text", serif;
     font-size: 18px;
+}
+.tit{
+    font-family: "DM Serif Text", serif;
+    font-size: 70px;
+    font-weight: bold;
+    color: #c0962b;
+
+}
+
+@media  (max-width: 800px){
+    .bg-img1{
+        height: 70vh;
+    }
+
+    .tit{
+        font-size: 50px; 
+        font-weight: bold;
+        color: #c0962b;
+        text-align: center;
+    }
+
+    .para{
+        text-align: center;
+    }
+
 }

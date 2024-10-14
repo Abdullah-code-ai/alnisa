@@ -39,9 +39,9 @@ const ContactFormMain = () => {
   };
 
   return (
-    <div className="contact-form-container">
+    <div className="contact-form-container- ">
       <form onSubmit={handleSubmit} className="contact-form">
-        <h2>Contact Us</h2>
+        <h2 className="form-heading">Contact Us</h2>
         <div className="form-group">
           <label>Name</label>
           <input 
@@ -95,7 +95,7 @@ const ContactFormMain = () => {
             <option value="Option 3">Quran Memorization</option>
             <option value="Option 4"> Quran Tafseer</option>
             <option value="Option 5">Quran Tajweed </option>
-            <option value="Option 6">Quran for Kids</option>
+            <option value="Option 6">Quran With Translation</option>
           </select>
         </div>
         <button type="submit" className="submit-btn">Submit</button>

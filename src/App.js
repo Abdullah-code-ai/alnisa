@@ -16,6 +16,9 @@ import Contact from './Pages/Contact/Contact';
 import Pricing from './Pages/Pricing/Pricing';
 import ContactFormMain from './Components/RegisterNow/ContactFormMain';
 import AllCourses from './Components/Courses/AllCourses';
+import Registration from './Pages/FreeTrail/Registration';
+import QuranTranslation from './Pages/Courses/QuranTranslation/QuranTranslation';
+import ScrollToTop from './ScrollToTop';
 
 
 
@@ -25,8 +28,9 @@ function App() {
  
   
    <Navbar />
-   
+   <ScrollToTop />
    <Routes>
+    
     <Route path='/' element={<Home />} />
     <Route path='/About' element={<About />} />
     <Route path='/Pricing' element={<Pricing />} />
@@ -40,6 +44,8 @@ function App() {
   <Route path='/Quran-with-Tajweed' element={<QuranwithTajweed />} />
  <Route path='/Contact-Form' element={<ContactFormMain />} />
  <Route path='/AllCourses' element={<AllCourses />} />
+ <Route path='/Quran-Translation' element={<QuranTranslation />} />
+ <Route path='/Registration' element={<Registration />} />
 
    </Routes>
    <Footer />

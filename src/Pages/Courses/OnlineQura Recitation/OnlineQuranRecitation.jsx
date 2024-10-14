@@ -8,12 +8,12 @@ const OnlineQuranRecitation = () => {
   return (
     <>
      <div className="container-fluid bg-img-2 text-center">
-        <h1 className='main-1-heading'> Online Quran Recitation</h1>
+        <h2 className='main-1-heading'> Online Quran Recitation</h2>
 
     </div>
     
       <div className="container main-data mt-5 ">
-        <h1 className="main-data-hrading">Online Quran Recitation Course</h1>
+        <h2 className="main-data-hrading">Online Quran Recitation Course</h2>
         <p className="main-data-para">
           In a world teeming with digital learning platforms, the quest for
           spiritual education has also found its sanctuary online. Among these
@@ -22,9 +22,9 @@ const OnlineQuranRecitation = () => {
           themselves in the sacred teachings of the Quran through an Online
           Quran Recitation Course
         </p>
-        <h1 className="main-data-hrading">
+        <h2 className="main-data-hrading">
           A Journey Towards Spiritual Elevation
-        </h1>
+        </h2>
         <p className="main-data-para">
           Online Quran recitation is not merely an act of reading; it’s an art
           that involves melodious voice modulation, correct pronunciation, and
@@ -36,9 +36,9 @@ const OnlineQuranRecitation = () => {
           Tajweed, the academy’s holistic approach caters to every aspirant’s
           needs
         </p>
-        <h1 className="main-data-hrading">
+        <h2 className="main-data-hrading">
           Explore the Best Quran Recitation Course Online
-        </h1>
+        </h2>
         <p className="main-data-para">
           The academy’s unique offering, Best Quran Recitation Course Online,
           stands out for its meticulously structured syllabus that combines
@@ -48,7 +48,7 @@ const OnlineQuranRecitation = () => {
           enchanting beauty of Tajweed or the depth of each ayah, students
           emerge with a treasure trove of knowledge and spiritual enlistment.
         </p>
-        <h1 className="main-data-hrading">Quran Recitation Online Course</h1>
+        <h2 className="main-data-hrading">Quran Recitation Online Course</h2>
         <p className="main-data-para">
           AL-NISA Quran Academy prides itself on making Quranic education
           accessible to all. The Quran Recitation Online Course breaks
@@ -58,7 +58,7 @@ const OnlineQuranRecitation = () => {
           online platform simulates a classroom experience that’s both engaging
           and effective.
         </p>
-        <h1 className="main-data-hrading">Why Choose AL-NISA Academy?</h1>
+        <h2 className="main-data-hrading">Why Choose AL-NISA Academy?</h2>
         <p className="main-data-para">
           Choosing AL-NISA – Online Quran Recitation Course Academy means
           embarking on a journey of self-discovery and spiritual growth under
@@ -68,9 +68,9 @@ const OnlineQuranRecitation = () => {
           environment makes it the ideal choice for families and individuals
           aiming to strengthen their bond with the Quran.
         </p>
-        <h1 className="main-data-hrading">
+        <h2 className="main-data-hrading">
           Embark on Your Divine Journey Today
-        </h1>
+        </h2>
         <p className="main-data-para">
           AL-NISA Online Academy invites you to join its community of seekers,
           learners, and educators on this beautiful path of Quranic
@@ -86,20 +86,19 @@ const OnlineQuranRecitation = () => {
           Academy – where the journey of a lifetime begins
         </p>
       </div>
-      <CourseFeatures />
       <div className="container">
         <div className="row">
-          <div className="col-6">
+          <div className="col-sm-12 col-lg-6">
             <div className="card-noorani">
               <div className="card-content">
-                <h1 className="card-title main-data-hrading ">
+                <h2 className="card-title main-data-hrading ">
                   Quran Recitation Course Online
-                </h1>
+                </h2>
 
                 <p className="main-data-para-">
                   Now, you are qualified to recite the Holy Quran perfectly,
                   with experienced American Quran tutors. Our Quran tutors are
-                  American, certified from Ejazul Quran, and of course, holding
+                  American, certified from AL-NISA Quran Academy, and of course, holding
                   ijazah in Quran recitation from approved Sheikhs in USA. In
                   this course, you will recite all of the Holy Quran. You will
                   learn how to correctly recite it in the way as reported by the
@@ -116,11 +115,11 @@ const OnlineQuranRecitation = () => {
               </div>
             </div>
           </div>
-          <div className="col-6">
+          <div className="col-sm-12 col-lg-6">
             <div className="card-noorani">
-              <h1 className="card-title main-data-hrading">
+              <h2 className="card-title main-data-hrading">
                 In the Quran Recitation Course, you’ll learn:
-              </h1>
+              </h2>
 
               <ul className="card-content ms-4">
                 <li className="lists">Quranic Phonetics</li>
@@ -141,6 +140,7 @@ const OnlineQuranRecitation = () => {
           </div>
         </div>
       </div>
+      <CourseFeatures />
 
       <CourseCard />
       <FreeTrail />

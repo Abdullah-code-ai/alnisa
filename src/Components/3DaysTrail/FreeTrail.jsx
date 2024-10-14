@@ -43,9 +43,9 @@ const FreeTrail = () => {
 
 <div className="contact-form-container " id='free-trial-container'>
       <form onSubmit={handleSubmit} className="contact-form" >
-        <h2>Contact Us</h2>
+        <h2 className="form-heading-">Contact Us</h2>
         <div className="form-group">
-          <label>Name</label>
+          <label className='form-lable'>Name</label>
           <input 
             type="text" 
             name="name" 
@@ -55,7 +55,7 @@ const FreeTrail = () => {
           />
         </div>
         <div className="form-group">
-          <label>Email</label>
+          <label className='form-lable'>Email</label>
           <input 
             type="email" 
             name="email" 
@@ -65,7 +65,7 @@ const FreeTrail = () => {
           />
         </div>
         <div className="form-group">
-          <label>Phone</label>
+          <label className='form-lable'>Phone</label>
           <input 
             type="tel" 
             name="phone" 
@@ -75,7 +75,7 @@ const FreeTrail = () => {
           />
         </div>
         <div className="form-group">
-          <label>Message</label>
+          <label className='form-lable'>Message</label>
           <textarea 
             name="message" 
             value={formData.message} 
@@ -83,7 +83,7 @@ const FreeTrail = () => {
             required 
           />
         </div>
-        <div className="form-group">
+        {/* <div className="form-group">
           <label>Select Course</label>
           <select 
             name="selection" 
@@ -99,7 +99,7 @@ const FreeTrail = () => {
             <option value="Option 5">Quran Tajweed </option>
             <option value="Option 6">Quran for Kids</option>
           </select>
-        </div>
+        </div> */}
         <button type="submit" className="submit-btn">Submit</button>
       </form>
     </div>

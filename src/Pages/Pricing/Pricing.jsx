@@ -8,12 +8,12 @@ const Pricing = () => {
     const plan = [
         {
           title: '5 Days/Week',
-          price: 'rs:9000',
+          price: 'Rs:9000',
           features: ['Per month', '30 Minutes Class', ' ✔  Concession Available', '✔  22 Classes' ,  ],
         },
         {
           title: '4 Days/Week',
-          price: 'rs:8000',
+          price: 'Rs:8000',
           features: ['Per month', '30 Minutes Class', '✔  Concession Available', '✔  18 Classes',],
         },
        
@@ -22,38 +22,38 @@ const Pricing = () => {
       const fee = [
         {
           name: "5 Days/Week",
-          price: "$150",
+          price: "$100",
           features: ["Per month", "✔  20 Classes/Month  ", "     ✔  Free Trial Classes", "✔  60 Minutes/Class"],
           buttonLabel: "Free Trail"
         },
         {
           name: "5 Days/Week",
-          price: "$80",
+          price: "$45",
           features: ["Per month", "  ✔  20 Classes/Month", "✔  Free Trial Classes", "✔  30 Minutes/Class"],
           buttonLabel: "Free Trail"
         },
         {
           name: "4 Days/Week",
-          price: "$65",
+          price: "$40",
           features: ["Per month","✔  16 Classes/Month",  "✔  Free Trial Classes", "✔  30 Minutes/Class",],
           buttonLabel: "Free Trail"
         },
         {
           name: "3 Days/Week",
-          price: "$50",
+          price: "$30",
           features: ["Per month","✔  12 Classes/Month",  "✔  Free Trial Classes", "✔  30 Minutes/Class",],
           buttonLabel: "Free Trail"
         },
         {
           name: "2 Days/Week",
-          price: "$30",
+          price: "$20",
           features: ["Per month","✔  8 Classes/Month",  "✔  Free Trial Classes", "✔  30 Minutes/Class",],
           buttonLabel: "Free Trail"
         }
         ,
         {
           name: "Weekends",
-          price: "$40",
+          price: "$20",
           features: ["Per month","✔  8 Classes/Month",  "✔  Free Trial Classes", "✔  30 Minutes/Class",],
           buttonLabel: "Free Trail"
         }
@@ -73,7 +73,7 @@ const Pricing = () => {
 
    </din>
    <div className="container text-center mt-5" >
-      <h1 className='title-'>For Pakistani Students</h1>
+      <h1 className='title-'>In Pkr</h1>
     </div>
    <div className="container-fluid" data-aos="zoom-in">
     <div className="pricing-container">
@@ -87,7 +87,7 @@ const Pricing = () => {
               
             ))}
           </ul>
-        <Link to="/Contact-Form" className="card-button-">
+        <Link to="/Registration" className="card-button-">
           <button className="card-button">Free Trail</button></Link>
         </div>
       ))}
@@ -97,7 +97,7 @@ const Pricing = () => {
    
    <div className="container">
 
-<h1 className='title-'>For International Students</h1>
+<h1 className='title-'>In USD</h1>
    <div className="pricing-cards-container" data-aos="zoom-in">
       {fee.map((fee, index) => (
         <div key={index} className="pricing-card">
@@ -108,7 +108,7 @@ const Pricing = () => {
               <li key={i}>{feature}</li>
             ))}
           </ul>
-          <Link to="/Contact-Form" className="card-button-">
+          <Link to="/Registration" className="card-button-">
            
           
           <button className="card-button-">{fee.buttonLabel}</button></Link>

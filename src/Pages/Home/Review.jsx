@@ -10,28 +10,28 @@ const Review = () => {
     const [reviews, setReviews] = useState([
         {
           id: 1,
-          name: 'John Doe',
-          review: 'My son is doing well with Online Quran learning and I think this is an effective platform for online Quran learning in the USA. Teachers provide a comfortable and friendly environment for learning as well as provide effective learning due to professional expertise. My son enjoys learning online. He is thankful to Quran academy & takes online classes every day.',
+          name: 'Tanveer Husain',
+          review: 'My son is doing well with Online Quran learning and I think this is an effective platform for online Quran learning in the USA. Teachers provide a comfortable and friendly environment for learning as well as provide effective learning due to professional expertise. My son enjoys learning online. I am thankful to Quran academy & Teachers.',
           rating: 5,
           image:   `${img1}` ,
         },
         {
           id: 2,
-          name: 'Jane Doe',
+          name: 'Maleeha Waqar',
           review: 'We are happy with Online Quran learningand its tutors are highly professional & fantastically teach Quran. We enjoy spending time with them. The tutors help the kids in learning as well as identifying & correcting mistakes. In classes, the last 5 minutes are about Adab.',
           rating: 4,
           image: `${img2}`,
         },
         {
           id: 3,
-          name: 'Bob Smith',
+          name: 'Muhammad',
           review: 'My niece has had an excellent experience learning the Quran online. Her teacher is very kind and uses all the best possible ways to engage her in Quran learning. In short, it is an effective platform that makes the students able to get religious education easily.',
           rating: 5,
           image: `${img3}`,
         },
         {
           id: 4,
-          name: 'Alice Johnson',
+          name: 'Sayeda Hajra Waqas',
           review: 'Learning the Holy Quran with Tajweed &Tafseer is always my dream. I am thankful to Online Quran learning for improving my Quran learning by Online Quran classes. ',
           rating: 5,
           image: `${img4}`,
@@ -51,7 +51,7 @@ const Review = () => {
       useEffect(() => {
         const intervalId = setInterval(() => {
           setCurrentIndex((currentIndex + 1) % reviews.length);
-        }, 5000);
+        }, 3000);
         return () => clearInterval(intervalId);
       }, [currentIndex, reviews]);
     
@@ -107,16 +107,16 @@ useEffect(() => {
               <img src={review.image} alt={review.name} onClick={handlePrevClick}  />
               <h3>{review.name}</h3>
               <p className='review'>{review.review}</p>
-              <div className="rating">
-                {[...Array(review.rating)].map((_, i) => (
+              <div className="rating"  onClick={handleNextClick1}>
+                {/* {[...Array(review.rating)].map((_, i) => (
                  <i key={i} className="far fa-star" />
               
                 ))}
                 {[...Array(5 - review.rating)].map((_, i) => (
-                     <i key={i} className="fas fa-star"  onClick={handleNextClick1} />
+                    //  <i key={i} className="fas fa-star"  />
                 //   
                 //  
-                ))}
+                ))} */}
               </div>
             </div>
           </div>

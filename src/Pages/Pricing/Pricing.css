@@ -13,9 +13,12 @@
     color: #c0962b;
     padding-top: 15%;
     font-family: "DM Serif Text", serif;
-    font-size: 50px;
+    font-size: 70px;
     font-weight: bold;
 
+}
+.card-price--{
+  color: #0D7C66 !important;
 }
 
 
@@ -61,7 +64,7 @@
   }
   
   .pricing-card button {
-    background-color: #007bff;
+    background-color:#0D7C66;
     color: white;
     border: none;
     border-radius: 4px;

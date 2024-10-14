@@ -41,10 +41,11 @@ useEffect(() => {
    
    <section className="hero-section">
       <div className="hero-content">
-        <h2 className="hero-welcome-title " data-aos="fade-down-right">Welcome to <br /></h2>
+        <h2 className="hero-welcome-title-- " data-aos="fade-up"
+     data-aos-anchor-placement="center-center">Welcome to <br /></h2>
         <h1 className="hero-title"  data-aos="fade-right">AL-NISA QURAN <br /> INSTITUTE</h1>
         <p className="hero-description"  data-aos="fade-up"
-     data-aos-anchor-placement="bottom-bottom">We provide solutions to make your life easier. Discover more about what we offer and how we can help you.</p>
+     data-aos-anchor-placement="bottom-bottom">We provide solutions to make your life easier. Discover <br /> more about what we offer and how we can help you.</p>
         <div className="hero-buttons"  data-aos="fade-up"
      data-aos-anchor-placement="bottom-bottom">
           <Link to="/About" className="hero-button primary button">Learn More</Link>
